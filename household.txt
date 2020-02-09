@@ -1,0 +1,5 @@
+Jennifer - lady,
+Zack - man,
+PingPong - scared,
+Napoleon - hungry
+Stranger - Crazy
