@@ -260,3 +260,86 @@
 #     print(err)
 # except ValueError:
 #     print("Invalid Input")
+
+# READ FROM EXTERNAL FILE
+# r, r+, - read, read/write
+# a = append
+# w = create new file
+# can create any type file you want -- HTML, etc.
+# whenever you open a file you want to make sure tha you close the file, too
+# household_file = open("household.txt", "r")
+#
+# # print(household_file.readable())
+# # print(household_file.readline())
+# # print(household_file.readlines())
+# # print(household_file.readlines()[1])
+# # for member in household_file.readlines():
+# #     print(member)
+#
+# # household_file.close()
+#
+#
+# # WRITING & APPENDING TO FILES
+# household_file = open("household.txt", "a")
+# household_file.write("\nStranger - Crazy")
+# household_file.close()
+
+
+# MODULEScmd
+# import useful_tools
+# print(useful_tools.roll_dice(4856))
+
+# PIP - installing 3rd party module
+# pip install python-docx or uninstall python-docx
+# located in ExternalLibraries>Lib>site-packages
+
+# CLASS
+# you can define your own data type
+# from Student import Student
+#
+# student1 = Student("Jennifer", "stuff", "4.0", False)
+# student2 = Student("Zack", "other stuff", "4.0", True)
+# print(student1.name)
+
+# MULTIPLE CHOICE QUIZ
+# how to use a class to model a real world thing
+# from Question import Question
+# question_prompts = [
+#     "What color is the sky? \n(a)Blue\n(b) Purple\n(c) Pink\n\n",
+#     "What color is a stop sign? \n(a)Green\n(b) Orange\n(c) Red\n\n",
+#     "What color is an Orange? \n(a)Red\n(b) Orange\n(c) Hot Pink\n\n",
+# ]
+#
+# questions = [
+#     Question(question_prompts[0], "a"),
+#     Question(question_prompts[1], "c"),
+#     Question(question_prompts[2], "b")
+# ]
+#
+# def run_test(questions):
+#     score = 0
+#     for question in questions:
+#         answer = input(question.prompt)
+#         if answer == question.answer:
+#             score += 1
+#         print("You got " + str(score) + "/" + str(len(questions)) + " correct.")
+#
+# run_test(questions)
+
+
+# CLASS FUNCTIONS
+# from Student import Student
+#
+# student1 = Student("Jennifer", "stuff", "3.9"),
+# student2 = Student("Zack", "other stuff", "2.0")
+
+
+# INHERITANCE
+# from Chef import Chef
+# from ChineseChef import ChineseChef
+# 
+# myChef = Chef()
+# myChef.make_special_dish()
+# 
+# myChineseChef = ChineseChef()
+# myChineseChef.make_special_dish()
